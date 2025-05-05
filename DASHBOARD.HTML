@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>E-COMMERCE</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      #container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      #menu {
+        width: 20rem;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+      }
+      #aside {
+        width: 61rem;
+        border: 1px solid #ddd;
+        padding: 20px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: white;
+      }
+      #inner-box {
+        width: 100%;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin: 20px 0;
+        padding: 20px 10px;
+      }
+      #nm {
+        font-weight: 700;
+        padding: 20px 0;
+      }
+      ul li {
+        list-style: none;
+        margin: 10px 0;
+      }
+      ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      ul li a:hover {
+        color: #007bff;
+      }
+      #h3 {
+        font-weight: 300;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+      #das {
+        margin: 20px 0;
+        font-weight: 700;
+      }
+      #pro {
+        width: 180px;
+        padding: 20px 20px;
+        border: 1px solid #ccc;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      #ink {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: space-around;
+      }
+      #header {
+        width: 100%;
+        border: px solid 1#ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        padding: 20px 10px;
+        justify-content: space-between;
+        display: flex;
+        border-radius: 10px;
+        margin-bottom: 4px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      #dash {
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: #007bff;
+        text-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      #footer {
+        width: 100%;
+        padding: 20px 10px;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        margin: 5px 0;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: 500;
+        color: #333;
+      }
+      .fa-arrow-up {
+        color: #007bff;
+        font-size: 2rem;
+        padding-top: 10px;
+        margin: 0 10px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+      #card {
+        border: 1px solid #bbb;
+        flex: 0 0 auto;
+        width: 150px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        justify-items: center;
+
+        font-size: 18px;
+        padding: 4px 4px;
+      }
+      .product-name {
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .product-price {
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+      }
+
+      .buy-button {
+        
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        margin: auto;
+        transition: background-color 0.3s;
+      }
+      .buy-button:hover {
+        
+         background-color: #0056b3;
+      }
+      .by-button
+      {
+      text-align: center;
+      }
+      #end {
+        padding-top: 10px;
+      }
+
+      @media (min-width: 577px) and (max-width: 768) {
+      }
+      /*medium devices laptops*/
+      @media (min-width: 769px) and (max-width: 1024px) {
+      }
+      /*large devices desktops*/
+      @media (min-width: 1025px) and (max-width: 1200px) {
+      }
+      /*extra large devices tablets*/
+      @media (min-width: 1201px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo">
+        <div
+          style="
+            width: 210px;
+            margin: 0 2px;
+            background-color: #f4f4f4;
+            padding: 4px 4px;
+          "
+        >
+          <div id="dash">Dashboard</div>
+        </div>
+      </div>
+
+      <div id="end">
+        <ul style="display: flex; gap: 20px">
+          <li><a href="/SIGNUP">SIGNUP</a></li>
+          <li><a href="/LOGIN">LOGIN</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="container">
+      <div id="menu">
+        <h2 id="nm">MENU</h2>
+        <ul>
+          <li><a href="#"> DASHBOARD</a></li>
+          <li><a href="/management"> MANAGEMENT</a></li>
+          <li><a href="/product"> PRODUCTS</a></li>
+          <li><a href="/about">ABOUT US</a></li>
+          <li><a href="/contact">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div id="aside">
+        <div id="das">DASHBORD OVERVIEW</div>
+        <div class="sales" id="inner-box">
+          <div id="h3">Total Sale</div>
+          <p style="margin: 5px 0">$50,200</p>
+        </div>
+        <div id="inner-box">
+          <div class="users" id="h3">Active Users</div>
+          <p style="margin: 5px 0">2000</p>
+        </div>
+
+        <div class="products" id="inner-box">
+          <div id="h3">popular products</div>
+
+          <div id="ink">
+            <div id="card">
+              <div class="product-name">headphones</div>
+              <div class="product-price">$99.99</div>
+            <div class="by-button" > <button class="buy-button" id="buyButton"  data-product-id="12345"  data-product-name="Wireless Headphones"  data-price="99.99" >Buy Now</button>         </div>
+          </div>
+                  
+          <div id="card">
+            <div class="product-name">headphones</div>
+            <div class="product-price">$99.99</div>
+          <div class="by-button" > <button class="buy-button" id="buyButton"  data-product-id="12345"  data-product-name="Wireless Headphones"  data-price="99.99" >Buy Now</button>         </div>
+        </div>
+
+        <div id="card">
+          <div class="product-name">headphones</div>
+          <div class="product-price">$99.99</div>
+        <div class="by-button" > <button class="buy-button" id="buyButton"  data-product-id="12345"  data-product-name="Wireless Headphones"  data-price="99.99" >Buy Now</button>         </div>
+      </div>
+
+      <div id="card">
+        <div class="product-name">headphones</div>
+        <div class="product-price">$99.99</div>
+      <div class="by-button" > <button class="buy-button" id="buyButton"  data-product-id="12345"  data-product-name="Wireless Headphones"  data-price="99.99" >Buy Now</button>         </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>&copy;2025 E-COMMERCE WEBSITE</p>
+      <div id="ico">
+        <a href="/dashboard"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      // Select all buttons with the "buyButton" class and loop through them
+      document.querySelectorAll(".buy-button").forEach(button => {
+          button.addEventListener("click", function(event) {
+              // Ensure the event comes from the button itself
+              const productDetails = {
+                  buttonId: event.currentTarget.id,
+                  productId: event.currentTarget.getAttribute("data-product-id"),
+                  productName: event.currentTarget.getAttribute("data-product-name"),
+                  price: event.currentTarget.getAttribute("data-price"),
+                  userId: getUserId() // Function to retrieve the user ID
+              };
+  
+              // Send the product details to the backend
+              fetch('/purchase', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify(productDetails)
+              })
+              .then(response => response.json())
+              .then(data => {
+                  console.log("Purchase details sent successfully:", data);
+              })
+              .catch(error => {
+                  console.error("Error sending purchase details:", error);
+                  
+              });
+          });
+      });
+  
+      // Function to retrieve the userId (from session, local storage, or fallback)
+      function getUserId() {
+          return localStorage.getItem("userId") || "guest"; // Fallback for guests
+      }
+  </script>
+
+
+
+  </body>
+</html>

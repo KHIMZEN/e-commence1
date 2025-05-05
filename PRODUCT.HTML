@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <title>Product</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+            }
+            body {
+                background-color: #f4f4f4;
+                padding: 20px 20px;
+            }
+            #left {
+                width: 25rem;
+                border: 1px solid #bbb;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px 20px;
+                background-color: white;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-around;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+            #right {
+                width: 55rem;
+                border: 1px solid #bbb;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px 20px;
+                background-color: white;
+                border-radius: 10px;
+                display: flex;
+                gap: 10px;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            #include {
+                width: 100%;
+                display: flex;
+                gap: 20px;
+                margin: 20px 0;
+               flex-wrap: wrap;
+            }
+            #card {
+                border: 1px solid #bbb;
+                width: 150px;
+                height: 200px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                background-color: white;
+                display: flex;
+                align-items: center;
+                display: block;
+                font-size: 18px;
+                padding: 4px 4px;
+            }
+            #buttom {
+                width: 82rem;
+                border: 1px solid #bbb;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px 20px;
+                background-color: white;
+                border-radius: 10px;
+                margin: 5px 0;
+            }
+            #in {
+                display: flex;
+                justify-content: center;
+            }
+            #footer {
+                width: 100%;
+                padding: 20px 10px;
+                border: 1px solid #ddd;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                background-color: white;
+                margin: 5px 0;
+                border-radius: 10px;
+                text-align: center;
+                font-weight: 500;
+                color: #333;
+            }
+            #dash {
+                font-size: 2.4rem;
+                font-weight: bold;
+                color: #007bff;
+                text-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+            #header {
+                width: 100%;
+                border: px solid 1#ddd;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                background-color: white;
+                padding: 20px 10px;
+                justify-content: space-between;
+                gap: 10px;
+                display: flex;
+                border-radius: 10px;
+                margin-bottom: 4px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .fa-house {
+                color: #007bff;
+                font-size: 2rem;
+                padding-top: 10px;
+                margin: 0 10px;
+            }
+            .fa-arrow-up {
+                color: #007bff;
+                font-size: 2rem;
+                padding-top: 10px;
+                margin: 0 10px;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+            }
+            #search {
+                padding-top: 20px;
+                width: 100%;
+            }
+            #sea {
+                width: 100%;
+                padding: 5px 10px;
+                border: 1px solid #bbb;
+                border-radius: 3px;
+                outline: none;
+            }
+            .product-name {
+                font-size: 22px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .product-price {
+                font-size: 18px;
+                color: #333;
+                text-align: center;
+            }
+
+            .buy-button {
+                
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            .by-button 
+            {
+                text-align: center;
+            }
+            .buy-button:hover {
+                background-color:#0056b3;
+            }
+            .search-container {
+                width: 100%;
+                margin-top: 10px;
+               
+                
+               
+                
+                
+            }
+
+            .search-input {
+                width: 90%;
+                padding: 10px 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                outline: none;
+                transition: border-color 0.3s ease;
+            }
+
+            .search-input:focus {
+                border-color: #0078d7;
+            }
+            @media (min-width: 577px) and (max-width: 768) {
+            }
+            /*medium devices laptops*/
+            @media (min-width: 769px) and (max-width: 1024px) {
+            }
+            /*large devices desktops*/
+            @media (min-width: 1025px) and (max-width: 1200px) {
+            }
+            /*extra large devices tablets*/
+            @media (min-width: 1201px) {
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <div
+                    style="
+                        width: 220px;
+                        margin: 0 2px;
+                        background-color: #f4f4f4;
+                        padding: 4px 4px;
+                    "
+                >
+                    <div id="dash">PRODUCTS</div>
+                </div>
+            </div>
+            <div class="search-container">
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search...">
+                    <button style="padding: 10px 15px; border: none; background-color: #0078d4; color: white; 
+                    border-radius: 4px; cursor: pointer; font-size: 14px;">
+       Send
+         </button>
+         
+            
+            </div>
+            <div id="end">
+                <a href="/dashboard"><i class="fa-solid fa-house"></i></a>
+            </div>
+        </div>
+        <div id="include">
+            <div id="left">
+                <div id="card">
+                    <div class="product-name">headphones</div>
+                    <div class="product-price">$99.99</div>
+                  <div class="by-button" > <button class="buy-button" id="buyButton"  data-product-id="12345"  data-product-name="Wireless Headphones"  data-price="99.99" >Buy Now</button>         </div>
+                </div>
+
+                <div id="card">
+                    <div class="product-name">speakers</div>
+                    <div class="product-price">$99.99</div>
+                  <div class="by-button" > <button class="buy-button" id="byButton"  data-product-id="11255"  data-product-name="speakers"  data-price="99.99" >Buy Now</button>         </div>
+                </div>
+             
+     </div>
+
+
+     
+            <div id="right">
+                <div id="card">
+                    <div class="product-name">T-shirt</div>
+                    <div class="product-price">$5000</div>
+                    <div class="by-button" > <button class="buy-button" id="buyButton"  data-product-id="300"  data-product-name="T-shirt"  data-price="5000" >Buy Now</button>         </div>
+                </div>
+
+                <div id="card">
+                    <div class="product-name">apeakers</div>
+                    <div class="product-price">$10,000</div>
+                    <div class="by-button" > <button class="buy-button" id="buyButton"  data-product-id="400"  data-product-name="speakers"  data-price="10,000" >Buy Now</button>         </div>
+                </div>
+                <div id="card">
+                    <div class="product-name">Product1</div>
+                    <div class="product-price">$20,000</div>
+                    <div class="by-button" > <button class="buy-button" class="buyButton"  data-product-id="500"  data-product-name="caps"  data-price="20000" >Buy Now</button>         </div>
+                </div>
+                <div id="card">
+                    <div class="product-name">Product1</div>
+                    <div class="product-price">$99.99</div>
+                    <div class="by-button" > <button class="buy-button">Buy Now</button></div>
+                </div>
+                <div id="card">
+                    <div class="product-name">Product1</div>
+                    <div class="product-price">$99.99</div>
+                    <div class="by-button" > <button class="buy-button">Buy Now</button></div>
+                </div>
+            </div>
+        </div>
+        <div id="in">
+            <div id="buttom">
+                <div id="card">
+                    <div class="product-name">Product1</div>
+                    <div class="product-price">$99.99</div>
+                    <div class="by-button" > <button class="buy-button">Buy Now</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>&copy;2025 E-COMMERCE WEBSITE</p>
+            <div id="ico">
+                <a href="/product"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        
+        <script>
+
+
+/*
+    // Select all buttons with the "buyButton" class and loop through them
+    document.querySelectorAll(".buy-button").forEach(button => {
+        button.addEventListener("click", function(event) {
+            // Ensure the event comes from the button itself
+            const productDetails = {
+                buttonId: event.currentTarget.id,
+                productId: event.currentTarget.getAttribute("data-product-id"),
+                productName: event.currentTarget.getAttribute("data-product-name"),
+                price: event.currentTarget.getAttribute("data-price"),
+                userId: getUserId() // Function to retrieve the user ID
+            };
+
+            // Send the product details to the backend
+            fetch('/purchase', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(productDetails)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Purchase details sent successfully:", data);
+            })
+            .catch(error => {
+                console.error("Error sending purchase details:", error);
+                
+            });
+        });
+    });
+
+    // Function to retrieve the userId (from session, local storage, or fallback)
+    function getUserId() {
+        return localStorage.getItem("userId") || "guest"; // Fallback for guests
+    }
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const productSocket = new WebSocket("ws://localhost:5000?type=product"); // Set WebSocket type explicitly
+
+document.querySelectorAll(".buy-button").forEach(button => {
+    button.addEventListener("click", function(event) {
+        const productDetails = {
+            buttonId: event.target.id,
+            productId: event.target.getAttribute("data-product-id"),
+            productName: event.target.getAttribute("data-product-name"),
+            price: event.target.getAttribute("data-price"),
+            userId: getUserId()
+        };
+
+        // Send order via WebSocket
+        productSocket.send(JSON.stringify({ action: "new_order", data: productDetails }));
+
+        console.log("Order sent via WebSocket:", productDetails);
+    });
+});
+
+// Function to retrieve the userId (from local storage or fallback)
+function getUserId() {
+    return localStorage.getItem("userId") || "guest"; // Assign "guest" if no user ID is found
+}
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+</script>
+ 
+
+
+       
+
+
+
+
+     
+       
+    </body>
+</html>

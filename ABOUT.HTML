@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <title>About Page</title>
+        <style>
+            /* Internal CSS for minimalist design */
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+            }
+            body {
+                background-color: #f4f4f4;
+                padding: 20px 20px;
+                color: #333;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 5px auto;
+                padding: 20px;
+            }
+
+            .row {
+                margin-bottom: 20px;
+                padding: 20px;
+                background-color: #ffffff;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                border: 1px solid #ddd;
+            }
+
+            .row h2 {
+                margin-bottom: 10px;
+                font-size: 22px;
+            }
+
+            .row p {
+                margin: 5px 0;
+                line-height: 1.6;
+            }
+
+            .cont {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .card {
+                width: 200px;
+                padding: 15px;
+                background-color: #e9ecef;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                text-align: center;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            .card img {
+                width: 100%;
+                border-radius: 50%;
+                margin-bottom: 10px;
+                border: 1px solid #bbb;
+                padding: 2px;
+            }
+
+            #footer {
+                width: 100%;
+                padding: 20px 10px;
+                border: 1px solid #ddd;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                background-color: white;
+                margin: 5px 0;
+                border-radius: 10px;
+                text-align: center;
+                font-weight: 500;
+                color: #333;
+            }
+            #header {
+                width: 100%;
+                border: px solid 1#ddd;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                background-color: white;
+                padding: 20px 10px;
+                justify-content: space-between;
+                gap: 10px;
+                display: flex;
+                border-radius: 10px;
+                margin-bottom: 4px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            #dash {
+                font-size: 2.4rem;
+                font-weight: bold;
+                color: #007bff;
+                text-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+            .fa-house {
+                color: #007bff;
+                font-size: 2rem;
+                padding-top: 10px;
+                margin: 0 10px;
+            }
+            #end {
+                padding-top: 10px;
+            }
+            .fa-arrow-up {
+                color: #007bff;
+                font-size: 2rem;
+                padding-top: 10px;
+                margin: 0 10px;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+            }
+            #arr {
+                justify-items: center;
+            }
+            .card {
+                background: white;
+                border-radius: 10px;
+                border: 1px solid #bbb;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                width: 200px;
+                text-align: center;
+            }
+            .card img {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                margin-bottom: 15px;
+            }
+            .card h2 {
+                font-size: 1.5rem;
+                margin: 10px 0;
+            }
+            .card p {
+                color: #555;
+                margin: 5px 0;
+            }
+            #ee {
+                justify-content: center;
+                display: flex;
+            }
+            i {
+                margin: 5px 5px;
+                color: orange;
+            }
+            #det {
+                margin: 5px 20px;
+            }
+
+            @media (min-width: 577px) and (max-width: 768) {
+            }
+            /*medium devices laptops*/
+            @media (min-width: 769px) and (max-width: 1024px) {
+            }
+            /*large devices desktops*/
+            @media (min-width: 1025px) and (max-width: 1200px) {
+            }
+            /*extra large devices tablets*/
+            @media (min-width: 1201px) {
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <div
+                    style="
+                        width: 190px;
+                        margin: 0 2px;
+                        background-color: #f4f4f4;
+                        padding: 4px 4px;
+                    "
+                >
+                    <div id="dash">About Us</div>
+                </div>
+            </div>
+
+            <div id="end">
+                <a href="/dashboard"><i class="fa-solid fa-house"></i></a>
+            </div>
+        </div>
+        <div class="container">
+            <!-- First Row: Mission -->
+            <div class="row">
+                <h2>Our Mission</h2>
+                <p>
+                    We aim to empower our users by providing innovative
+                    solutions that make life easier and more efficient. Our
+                    mission is to inspire creativity and drive progress.
+                </p>
+            </div>
+
+            <!-- Second Row: About the User -->
+            <div class="row">
+                <h2>About Us</h2>
+                <p>
+                    We are a dynamic team dedicated to creating a user-friendly
+                    platform for connecting people and ideas. Discover tools
+                    designed to help you achieve your goals effortlessly.
+                </p>
+            </div>
+
+            <!-- Third Row: Cards for Faces -->
+
+            <div class="row">
+                <h2>Our Team</h2>
+                <div class="cont">
+                    <div class="card">
+                        <img
+                            src="InShot_20240816_205909322.jpg"
+                            alt="Ackim Mhone"
+                        />
+                        <h4>KHIMZEN</h4>
+                        <p>CEO</p>
+
+                        <div id="ee">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="IMG_20240405_212247.jpg" alt="pic" />
+                        <h4>ELNINO</h4>
+                        <p>WEB DEV</p>
+
+                        <div id="ee">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            src="2a0e0c0de06a49c6aba6e165a6230022.jpg"
+                            alt="PIC"
+                        />
+                        <h4>BECK</h4>
+                        <p>UI/UX</p>
+
+                        <div id="ee">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Row: How to Use the Platform -->
+            <div class="row">
+                <h2>How to Use the Platform</h2>
+                <p>
+                    Follow these simple steps to make the most of our platform:
+                </p>
+                <div id="det">
+                    <ol>
+                        <li>
+                            <strong>Customer clicks the "Buy" button:</strong>
+                            Initiates the action and redirects to the product
+                            page.
+                        </li>
+                        <li>
+                            <strong>Add product to the product list:</strong>
+                            Select and specify product details.
+                        </li>
+                        <li>
+                            <strong>Product list interaction options:</strong>
+                            Edit, add more, or delete products.
+                        </li>
+                        <li>
+                            <strong>Finalize the product list:</strong> Ready
+                            the list for checkout.
+                        </li>
+                        <li>
+                            <strong>Cart review:</strong> Review and make final
+                            changes to the items.
+                        </li>
+                        <li>
+                            <strong>Proceed to payment:</strong> Choose payment
+                            options like credit card or PayPal.
+                        </li>
+                        <li>
+                            <strong>Payment confirmation:</strong> Receive an
+                            order confirmation upon successful payment.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>&copy;2025 E-COMMERCE WEBSITE</p>
+            <div id="ico">
+                <a href="DASHBOARD.HTML"
+                    ><i class="fa-solid fa-arrow-up"></i
+                ></a>
+            </div>
+        </div>
+    </body>
+</html>

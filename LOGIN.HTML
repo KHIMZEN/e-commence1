@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>login page</title>
+    <style>
+       *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+   
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+    height:100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    
+}  
+#container
+{
+    width: 20rem;
+    padding: 5px 5px;
+    border: 2px solid #bbb;
+    background-color: white;
+    border-radius:5px;
+}
+#head
+{
+    font-weight: bold;
+    font-size:30px;
+    justify-content: start;
+    margin:20px 0px;
+    font-weight: 500;
+    color: #007bff;
+}
+#fo 
+{
+    
+    
+   
+    gap: 10px;
+
+}
+ #in
+{
+  width:100%;
+  padding: 15px 5px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #bbb;;
+  background-color: white;
+  color: black;
+}
+#checkbox
+{
+  margin: 20px 0px;
+  color: black;
+}
+#bot
+{
+    margin-top:50px;
+    margin-bottom: 5px;
+    color: black;
+}
+.submit
+{    width:100%;
+    padding: 15px 5px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid  #bbb;
+    
+    font-weight: bold;
+    color: white;
+    background-color:#007bff;
+}
+#di
+{   
+    color:#007bff;
+}
+#social
+{   width:100%;
+    display: flex;
+    gap:10px;
+    justify-content:space-around;
+    margin: 20px 0px;
+}  
+.fa-facebook
+{
+  font-size:30px;
+  color: #3b5998;;
+}
+
+.fa-x-twitter
+{
+  font-size: 30px;
+  color: #1DA1F2;
+}
+.fa-google
+{
+    font-size: 30px;
+    color:#db4437 ;
+}
+.fa-instagram
+{
+  font-size: 30px;
+  color:#c13584;
+}
+@media (min-width:577px) and (max-width: 768)
+  {
+
+  }
+     /*medium devices laptops*/
+  @media (min-width:769px) and (max-width:1024px)
+  {
+
+  }
+   /*large devices desktops*/
+  @media (min-width:1025px) and (max-width: 1200px)
+  {
+
+  }
+    /*extra large devices tablets*/
+  @media (min-width:1201px)
+  {
+
+  }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="head">Log In</div>
+        <form action="/login" method="post" >
+      <div id="fo">
+          <div><input type="text"  name="firstname" value="firstname" id="in" ></div> 
+          <div><input type="text"  name="surname" value="surname" placeholder="Last Name" id="in"></div> 
+
+      </div>  
+    
+      <input type="Password" name="password" value="password"  placeholder="Password" id="in"> <br>
+      <input type="email" name="email" value="email"  placeholder="Email" id="in"> <br> 
+     
+       <input type="checkbox" name="checkbox" value="checkbox" id="checkbox"> <label for="checkbox" id="checkbox"  > i agree with privacy and policy</label> <br>
+       <input type="submit" name="submit" placeholder="Sign Up"  class="submit">
+        </form>
+               <div style="text-align: center;padding-top:30px;">Or sign in with</div>
+        <div id="social">
+         <div> <i class="fa-brands fa-facebook"></i> </div>   <i class="fa-brands fa-x-twitter"></i> <i class="fa-brands fa-google"></i>   
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+
+       <div id="bot">Dont have account <a href="/signup" id="di">sign up</a> </div>
+
+
+</div>
+</body>
+</html>

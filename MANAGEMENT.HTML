@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <title>management</title>
+
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+     }
+       body 
+       {
+         background-color: #f4f4fe;
+         padding: 20px;
+       }
+       .col
+     {
+    width: 100%;
+    padding: 20px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 10px 0;
+    } 
+    #h3
+    {
+        font-weight: 700;
+        padding:10px 0;
+    }
+    #container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-around;
+
+    }
+    #pro
+    {
+        width: 200px;
+        border: 1px solid #ddd;
+        padding: 10px 20px;
+       text-align: center;
+
+    }
+  #action
+  {
+    width: 100%;
+  }
+  #order
+  {
+    width: 600px;
+    border: 1px solid #ddd;
+    padding: 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #payment
+  { padding: 20px 20px;
+    width: 600px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #comf
+  {
+    width: 600px;
+    padding: 20px 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    
+  }
+ #inner-box
+ {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;;
+ }
+ #dash
+{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color:#007bff;
+    text-shadow:  0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+button:hover
+{
+ background-color: #007bff;
+}
+ #header
+{
+  width: 100%;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 20px 10px;
+  justify-content: space-between;
+  display: flex;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  padding-left:30px;
+  padding-right:30px;
+}
+ #footer
+{
+    width:100%;
+    padding: 20px  10px;
+    border: 1px solid #ddd;;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    color: #333;;
+    
+}  
+.fa-house
+{
+   color: #007bff;
+   font-size: 2rem;
+   padding-top: 10px;
+   margin:0 10px;
+
+   
+}
+.fa-arrow-up
+{
+  color: #007bff;
+  font-size: 2rem;
+  padding-top: 10px;
+  margin:0 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  
+}
+button
+{
+   background-color: #f5f5f5;
+   padding: 5px 20px;
+   color: #333;
+   border: 1px solid #ddd;
+    border-radius: 3px;
+   
+}
+#pay
+{
+  
+  background-color: #f5f5f5;
+   padding: 5px 20px;
+   color: #333;
+   border: 1px solid #ddd;
+    border-radius: 3px;
+}
+#in
+{
+  background-color: #f5f5f5;
+   padding: 5px 20px;
+   color: #333;
+   border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.buy-button
+ {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            margin-top: 15px ;
+            transition: background-color 0.3s;
+        }
+    /*small devices tablets*/
+  @media (min-width:577px) and (max-width: 768)
+  {
+
+  }
+     /*medium devices laptops*/
+  @media (min-width:769px) and (max-width:1024px)
+  {
+
+  }
+   /*large devices desktops*/
+  @media (min-width:1025px) and (max-width: 1200px)
+  {
+
+  }
+    /*extra large devices tablets*/
+  @media (min-width:1201px)
+  {
+
+  }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+           <div style="width: 290px;margin:0 2px;background-color:#f4f4f4; padding: 4px 4px; ">
+               <div id="dash">MANAGEMENT</div>
+           </div>
+        </div>
+   
+         <div id="end">
+     <a href="/dashboard"><i class="fa-solid fa-house"></i></a>     
+         </div>
+       </div>
+    <div class="col" id="product">
+       <div id="h3">Product list</div>
+       <div id="container">
+             <div id="pro">
+               <h3 style="padding:5px 0;">product 1</h3>
+               <p style="padding:20px 0;">price= Mk5000</p>
+               <div id="action" style="display: flex; flex-wrap: wrap; gap:10px; justify-content: center;margin:10px 0;">
+               <button>Edit</button> 
+               <button>delete</button>
+               <button>add</button>
+            </div>
+             </div>
+             <div id="pro">
+                <h3 style="padding:5px 0;">product 2</h3>
+                <p style="padding:20px 0;">price= Mk5000</p>
+                <div id="action" style="display: flex; flex-wrap: wrap; gap:10px; justify-content: center;margin:10px 0;">
+                <button>Edit</button> 
+                <button>delete</button>
+                <button>add</button>
+             </div>
+              </div>
+              <div id="pro">
+                <h3 style="padding:5px 0;">product 3</h3>
+                <p style="padding:20px 0;">price= Mk5000</p>
+                <div id="action" style="display: flex; flex-wrap: wrap; gap:10px; justify-content: center;margin:10px 0;">
+                <button>Edit</button> 
+                <button>delete</button>
+                <button>add</button>
+             </div>
+              </div>
+
+              <div id="pro">
+                <h3 style="padding:5px 0;">product 4</h3>
+                <p style="padding:20px 0;">price= Mk5000</p>
+                <div id="action" style="display: flex; flex-wrap: wrap; gap:10px; justify-content: center;margin:10px 0;">
+                <button>Edit</button> 
+                <button>delete</button>
+                <button>add</button>
+             </div>
+              </div>
+
+              <div id="pro">
+                <h3 style="padding:5px 0;">product 5</h3>
+                <p style="padding:20px 0;">price= Mk5000</p>
+                <div id="action" style="display: flex; flex-wrap: wrap; gap:10px; justify-content: center;margin:10px 0;">
+                <button>Edit</button> 
+                <button>delete</button>
+                <button>add</button>
+             </div>
+              </div>
+              
+              <div id="pro">
+               
+              
+
+                 
+                <button>Add new product</button>
+                
+             </div>
+              </div>
+
+              
+       </div>
+    </div>
+    <div class="col" id="cart">
+        <div id="h3">Shopping cart</div>
+        <p style="margin:10px 0;">No items in the cat</p>
+    </div>
+    <div class="col" id="checkout">
+        <div id="h3">checkout</div>
+    <div id="inner-box" style="width:100%; display:flex;">
+        <div id="order">
+          <div id="h3"  >Order Reviews</div>
+          <p style="padding: 5px 0;">item 1=Mk200</p>
+          <p style="padding: 5px 0;">itme 2=Mk 300</p>
+          <p style="padding: 5px 0; font-weight: bold;">Total=Mk 500</p>
+        </div>
+        
+        <div id="payment">
+            <div id="h3">Payment Process</div>
+            <form action="">
+                <label for="">Select payment method:</label>
+                <select name="payment" id="pay">
+                      <option value="credi">Credit-card</option>
+                      <option value="pay">Pay Pal</option>
+                      <option value="bank">Bank transfer</option> 
+                      <option value="mobile">Airtel/Tnm</option>
+                </select> <br> <br>
+                <label for="card">Card Details:</label> <input type="number" name="card" id="in" placeholder="Enter your card number" required> <input type="submit" value="pay now" placeholder="pay now" id="pay">
+            </form>
+            
+
+        </div>
+        <div id="comf" class="old">
+         <div> Order Comfirmation </div> 
+  <a href="#"> <button class="buy-button">Place Order</button>  </a>   
+        
+        </div>
+       
+      </div>
+    </div>
+<div id="footer">
+    <p>  &copy;2025 E-COMMERCE WEBSITE </p>  <div id="ico"> <a href="/management"><i class="fa-solid fa-arrow-up"></i></a>  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+const managementSocket = new WebSocket("ws://localhost:5000?type=management");  // WebSocket for management client
+
+// Log connection status
+managementSocket.onmessage = (event) => {
+    console.log("Raw WebSocket message received:", event.data); // Debugging
+
+    try {
+        const message = JSON.parse(event.data);
+        console.log("Parsed message:", message);
+
+        if (!message || !message.action) {
+            console.error("Invalid message format:", message);
+            return;
+        }
+    } catch (error) {
+        console.error("Error parsing message:", error);
+    }
+};
+
+
+
+/*
+const socket = new WebSocket("ws://localhost:5000"); // Adjust based on server setup
+
+socket.onmessage = (event) => {
+    const message = JSON.parse(event.data);
+
+    if (message.action === "update_management") {
+        const orderDetails = message.data;
+
+        // Update Management UI (Modify this based on your UI logic)
+        const orderList = document.getElementById("pro");
+        const orderItem = document.createElement("li");
+        orderItem.innerText = `Order: ${orderDetails.productName} ($${orderDetails.price})`;
+        orderList.appendChild(orderItem);
+
+        console.log("Management page updated with new order:", orderDetails);
+    }
+};
+
+socket.onopen = () => {
+    console.log("Connected to WebSocket server for live updates");
+};
+
+socket.onerror = (error) => {
+    console.error("WebSocket error:", error);
+};
+*/
+
+
+
+
+</script>
+
+
+</body>
+</html> 
